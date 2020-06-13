@@ -1,0 +1,11 @@
+.parent {
+    margin: auto;
+    width: 50%;
+    background-color: #f00;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    color: #0f0;
+}
