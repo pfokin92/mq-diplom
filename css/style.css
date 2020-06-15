@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: opensansbold;
+  font-family: opensansbold, Arial, Helvetica, sans-serif;
   src: url("/fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: normal;
@@ -54,11 +54,12 @@ body {
 }
 
 .title_text {
-  font-family: opensansbold;
+  font-family: opensansbold, Arial, Helvetica, sans-serif;
   width: 32.25rem;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 5rem;
+  font-weight: 700;
 }
 
 .title_page {
@@ -72,7 +73,7 @@ body {
   color: #fff;
   font-size: 3.5rem;
   margin: 0;
-  margin-left: 6rem;
+  margin-left: 5rem;
 }
 
 .download_bottons {
@@ -90,7 +91,7 @@ body {
   display: flex;
   color: #fff;
   text-transform: uppercase;
-  font-family: opensans;
+  font-family: opensans, Arial, Helvetica, sans-serif;
   justify-content: center;
   border-radius: 3rem;
   height: 4.5rem;
@@ -116,4 +117,78 @@ body {
 .title_platform {
   font-weight: 700;
   margin: 0;
+}
+
+.article_header {
+  color: #e7e7e7;
+  text-transform: uppercase;
+  font-family: opensansbold, Arial, Helvetica, sans-serif;
+  font-size: 4.5rem;
+  margin-left: 2.5rem;
+}
+
+.article_conteiner {
+  height: 27.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article_conteiner:nth-of-type(1) {
+  background-color: #fafafa;
+}
+
+.article_conteiner:nth-of-type(2) {
+  background-color: #f5f4f9;
+}
+
+.article_conteiner:nth-of-type(3) {
+  background-color: #5e42b0;
+}
+
+.header_block {
+  font-family: opensansbold, Arial, "Helvetica Neue", sans-serif;
+  display: flex;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.number_conteiner {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.number_conteiner::after {
+  content: "";
+  display: block;
+  height: 0.5rem;
+  width: 2rem;
+  background-color: #5e42b0;
+  opacity: 0.4;
+}
+
+.number_conteiner:nth-of-type(3)::after {
+  content: "";
+  display: block;
+  height: 0.5rem;
+  width: 2rem;
+  background-color: #fff;
+  opacity: 0.4;
+}
+
+.header_conteiner {
+  font-size: 2.25rem;
+  color: #c1c1c1;
+  margin: 0;
+}
+
+.text_conteiner {
+  font-size: 2rem;
+  margin-left: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: opensans, Arial, Helvetica, sans-serif;
 }
