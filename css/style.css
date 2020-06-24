@@ -1,13 +1,13 @@
 @font-face {
   font-family: opensans;
-  src: url("fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: opensansbold, Arial, Helvetica, sans-serif;
-  src: url("fonts/OpenSans-Bold.woff");
+  src: url("../fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -20,14 +20,15 @@ body {
   margin: 0;
 }
 
-.header {
+.header_page {
   background-color: #171b3d;
   height: 100vh;
-  background-image: url("images/football_767.jpg");
+  background-image: url("../images/football_767.jpg");
   background-size: cover;
+  background-position: center center;
 }
 
-.header::after {
+.header_page::after {
   content: "";
   background-color: #212449;
   top: 0;
@@ -80,14 +81,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 10rem;
+  height: 18%;
+  width: 70%;
   justify-content: space-between;
-  align-self: unset;
 }
 
 .download_botton {
   background-color: #5e42b0;
-  width: 35rem;
   display: flex;
   color: #fff;
   text-transform: uppercase;
@@ -96,6 +96,7 @@ body {
   border-radius: 3rem;
   height: 4.5rem;
   text-decoration: none;
+  font-style: normal;
 }
 
 .logo {
@@ -119,6 +120,10 @@ body {
   margin: 0;
 }
 
+.athlets {
+  position: relative;
+}
+
 .article_header {
   color: #e7e7e7;
   text-transform: uppercase;
@@ -126,33 +131,35 @@ body {
   font-size: 6rem;
   margin-left: 2.5rem;
   height: 25rem;
-  position: relative;
 }
 
 .athlets::before {
   content: "";
   position: absolute;
-  background-image: url("images/footballer_497.png");
+  background-image: url("../images/footballer_497.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 50%;
-  width: 50%;
-  left: 25%;
-  top: 120%;
+  height: 50vh;
+  width: 50vw;
+  left: 25vw;
+  top: 12vh;
+}
+
+.players {
+  position: relative;
 }
 
 .players::before {
   content: "";
   position: absolute;
-  background-image: url("images/basketballer_302.png");
+  background-image: url("../images/basketballer_302.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 50%;
-  width: 50%;
-  left: 25%;
-  top: 120%;
+  height: 50vh;
+  width: 98vw;
+  top: 12vh;
 }
 
 .article_conteiner {
@@ -175,6 +182,10 @@ body {
   background-color: #5e42b0;
 }
 
+.players>.article_conteiner:nth-of-type(3) {
+  background-color: #090c35;
+}
+
 .header_block {
   font-family: opensansbold, Arial, "Helvetica Neue", sans-serif;
   display: flex;
@@ -187,6 +198,7 @@ body {
 .number_conteiner {
   margin: 0;
   font-size: 1.5rem;
+  font-family: opensansbold, Arial, "Helvetica Neue", sans-serif;
 }
 
 .number_conteiner::after {
@@ -196,6 +208,10 @@ body {
   width: 2rem;
   background-color: #5e42b0;
   border-radius: 0.25rem;
+}
+
+.players>.article_conteiner>.header_block>.growth {
+  color: #8765dd;
 }
 
 .growth::after {
@@ -219,4 +235,164 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   font-family: opensans, Arial, Helvetica, sans-serif;
+}
+
+.players>.article_conteiner>.unique_color {
+  color: #ffffff;
+}
+
+.image_container {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.be_active>.image_container {
+  background-image: url("../images/be-active_640.jpg");
+}
+
+.find_contact>.image_container {
+  background-image: url("../images/find-contact_640.jpg");
+}
+
+.work_it>.image_container {
+  background-image: url("../images/work-it_640.jpg");
+}
+
+.other_header {
+  color: #e7e7e7;
+  text-transform: uppercase;
+  font-family: opensansbold, Arial, Helvetica, sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-left: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text_other_container {
+  font-size: 2rem;
+  font-family: opensans, Arial, Helvetica, sans-serif;
+  margin-left: 2.5rem;
+}
+
+.number_other_article_container {
+  height: 6.75rem;
+  width: 6.75rem;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  left: 2.5rem;
+  top: -5rem;
+  background-color: #5e42b0;
+  justify-content: center;
+  align-items: center;
+}
+
+.number_other_article {
+  color: #f5f6f7;
+  font-family: opensansbold, Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.number_other_article::after {
+  content: "";
+  display: block;
+  height: 0.5rem;
+  width: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  opacity: 0.3;
+}
+
+.footer {
+  background-color: #171b3d;
+  background-repeat: no-repeat;
+  background-image: url("../images/game_767.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+
+.footer::after {
+  content: "";
+  background-color: #212449;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.9;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo_container_footer {
+  background-color: #5335a1;
+  border-radius: 2rem;
+  width: 9rem;
+}
+
+.logo_footer {
+  fill: #fff;
+  padding: 1.5rem;
+  width: 6rem;
+}
+
+.text_footer {
+  text-transform: uppercase;
+  font-family: opensansbold Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.footer_header {
+  color: #fff;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.footer_title {
+  font-size: 1.75rem;
+  margin: 0;
+  color: #9b8ec1;
+}
+
+.download_bottons_footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 18%;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.download_botton_footer {
+  background-color: #5e42b0;
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: opensans, Arial, Helvetica, sans-serif;
+  justify-content: center;
+  border-radius: 3rem;
+  height: 4.5rem;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.title_surface_footer {
+  fill: #fff;
+  width: 17rem;
 }
